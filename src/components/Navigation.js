@@ -8,6 +8,7 @@ import News from '../pages/News';
 import Meteo from '../pages/Meteo';
 import Erreur from '../pages/Erreur';
 import Spots from '../pages/Spots';
+import Classements from '../pages/Classements';
 
 
 const Navigation = () => {
@@ -25,10 +26,10 @@ const Navigation = () => {
         <Nav.Link as={Link} to={"/news"}>News</Nav.Link>
         <Nav.Link as={Link} to={"/spots"}>Spots</Nav.Link>
         <NavDropdown title="Classements" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1">Monde</NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.2">France</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to={"/classements"}>Monde</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to={"/classements"}>France</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.3">JSpquoi</NavDropdown.Item>
+          <NavDropdown.Item href="https://www.facebook.com/antoine.petit.182/">JSpquoi</NavDropdown.Item>
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
@@ -41,6 +42,7 @@ const Navigation = () => {
           <Route path = "/news" exact element= {<News/>}> </Route>
           <Route path = "/meteo" exact element= {<Meteo/>}> </Route>
           <Route path = "/spots" exact element= {<Spots/>}> </Route>
+          <Route path = "/classements" exact element= {<Classements/>}> </Route>
           <Route element = {<Erreur/>}></Route> 
             </Routes>
         </div>
