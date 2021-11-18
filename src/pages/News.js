@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation';
 const News = () => {
     return (
         <div>
-            <Navigation/>
+           
             <h1>Les news du jour !</h1>
             <br/>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae recusandae, quis facere,

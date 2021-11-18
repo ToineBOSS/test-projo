@@ -1,11 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import Navigation from '../components/Navigation';
 
 const Accueil = () => {
     return (
-        <div>
+        <Container>
+            <div>
 
-         <Navigation />   
          <h1>Accueil</h1>
          <img src="./img/fond1.jpg"></img>
          <br/>
@@ -21,6 +22,7 @@ const Accueil = () => {
                  sint totam! Quibusdam harum aut cumque dolor molestiae dolorum? Itaque quidem praesentium nisi minima minus laborum. Quos, sunt quis!
                  </p>
         </div>
+        </Container>
     );
 };
 
