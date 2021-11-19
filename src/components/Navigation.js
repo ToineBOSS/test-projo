@@ -1,4 +1,3 @@
-import React, {useState, useEffect} from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import '../index.css';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
@@ -43,7 +42,7 @@ const Navigation = () => {
           <Route path = "/meteo" exact element= {<Meteo/>}> </Route>
           <Route path = "/spots" exact element= {<Spots/>}> </Route>
           <Route path = "/classements" exact element= {<Classements/>}> </Route>
-          <Route element = {<Erreur/>}></Route> 
+          <Route element = {<Erreur/>}/>
             </Routes>
         </div>
         </Router>
