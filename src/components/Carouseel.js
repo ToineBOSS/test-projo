@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Container,Image } from 'react-bootstrap';
+import '../pages/Accueil.css';
 
 const Carouseel = () => {
   return (
@@ -7,14 +8,14 @@ const Carouseel = () => {
     <div>
       <Carousel>
   <Carousel.Item>
-  <Image src="./img/Waikiki.jpg" fluid></Image>
+  <Image src="./img/Waikiki.jpg" fluid ></Image>
     <Carousel.Caption>
       <h3>Waikiki Beach (Hawaï)</h3>
       <p>Ah Hawaï, la ou tout a commencé</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-  <Image src="./img/Nazare.jpg" fluid></Image>
+  <Image src="./img/Nazare.jpg" fluid ></Image>
 
     <Carousel.Caption>
       <h3>Nazare (Portugal)</h3>
@@ -22,7 +23,7 @@ const Carouseel = () => {
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
-  <Image src="./img/Biarritz.jpg" fluid></Image>
+  <Image src="./img/Biarritz.jpg" fluid ></Image>
 
     <Carousel.Caption>
       <h3>Biarritz (France)</h3>

@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import '../index.css';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Container, Image,Col} from 'react-bootstrap'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import Accueil from '../pages/Accueil';
 import News from '../pages/News';
@@ -8,15 +8,24 @@ import Meteo from '../pages/Meteo';
 import Erreur from '../pages/Erreur';
 import Spots from '../pages/Spots';
 import Classements from '../pages/Classements';
+import '../pages/Accueil.css';
 
 
 const Navigation = () => {
     return (
         <Router>
         <div>
-            <Navbar bg="light" expand="lg">
+            
+            <Navbar bg="light" expand="lg"> 
+            
   <Container>
-    <Navbar.Brand as={Link} to={"/"}>Toni&Theo Surfing</Navbar.Brand>
+
+    <Col as={Link} to={"/"}>  
+      <img  src="./img/logo.png" className="logodeltoni"></img>
+    </Col>
+    <Navbar.Brand as={Link} to={"/"}>
+       
+        Toni&Theo Surfing</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
