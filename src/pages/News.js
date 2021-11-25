@@ -1,9 +1,11 @@
 import React from 'react';
+import { Container, Tabs, Tab, Sonnet } from 'react-bootstrap';
 
 
 
 const News = () => {
     return (
+        <Container>
         <div>
            
             <h1>Les news du jour !</h1>
@@ -20,6 +22,20 @@ const News = () => {
                  sint totam! Quibusdam harum aut cumque dolor molestiae dolorum? Itaque quidem praesentium nisi minima minus laborum. Quos, sunt quis!
                  </p>
         </div>
+
+        <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
+  <Tab eventKey="home" title="Social">
+    <p>Voila nos réseaux sociaux :) n'hesites pas a nous contacter</p>
+    
+  </Tab>
+  <Tab eventKey="profile" title="Visit">
+    <p>Merci pour votre visite laissez nous votre contact :)</p>
+  </Tab>
+  <Tab eventKey="contact" title="Contact" >
+    
+  </Tab>
+</Tabs>
+        </Container>
     );
 };
 
