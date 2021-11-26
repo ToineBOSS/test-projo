@@ -1,8 +1,30 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import { Container } from 'react-bootstrap';
-import Weather from '../components/Weather';
+import Films from '../components/Films';
 
 const Meteo = () => {
+
+    const [movies, setMovies] = useState([{
+        "Title": "The Avengers",
+        "Year": "2012",
+        "imdbID": "tt0848228",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Avengers: Endgame",
+        "Year": "2019",
+        "imdbID": "tt4154796",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg"
+    },
+    {
+        "Title": "Avengers: Endgame",
+        "Year": "2019",
+        "imdbID": "tt4154796",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg"
+    }]);
     return (
         <Container>
         <div>
@@ -21,7 +43,7 @@ const Meteo = () => {
                  sint totam! Quibusdam harum aut cumque dolor molestiae dolorum? Itaque quidem praesentium nisi minima minus laborum. Quos, sunt quis!
                  </p>
         </div>
-        <Weather />
+        <Films movies={movies}/>
         </Container>
     );
 };
