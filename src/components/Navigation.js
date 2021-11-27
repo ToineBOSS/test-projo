@@ -4,11 +4,11 @@ import { Navbar, Nav, NavDropdown, Container, Image,Col} from 'react-bootstrap'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import Accueil from '../pages/Accueil';
 import News from '../pages/News';
-import Meteo from '../pages/Meteo';
 import Erreur from '../pages/Erreur';
 import Spots from '../pages/Spots';
 import Classements from '../pages/Classements';
 import '../pages/Accueil.css';
+import Filmz from '../pages/Filmz';
 
 
 const Navigation = () => {
@@ -46,7 +46,7 @@ const Navigation = () => {
             <Routes>
             <Route path = "/" exact element ={<Accueil/>}></Route>
           <Route path = "/actus" exact element= {<News/>}> </Route>
-          <Route path = "/films" exact element= {<Meteo/>}> </Route>
+          <Route path = "/films" exact element= {<Filmz/>}> </Route>
           <Route path = "/acteurs" exact element= {<Spots/>}> </Route>
           <Route path = "/classements" exact element= {<Classements/>}> </Route>
           <Route element = {<Erreur/>}/>

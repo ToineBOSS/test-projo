@@ -8,6 +8,20 @@
         background-size: 100%;
         background-repeat: no-repeat;
 }
+/*//////////////////////////////////////////*/
 
 
+img{
+    width: 240px;
+    height: 356px;
+    display: block;
+}
 
+.InfoM{
+    list-style-type: none;
+}
+
+.maxitest > row {
+    display: flex;
+    flex-wrap: wrap;
+}
