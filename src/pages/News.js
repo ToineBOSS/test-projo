@@ -1,11 +1,14 @@
 import React from 'react';
-import { Container, Tabs, Tab, Sonnet } from 'react-bootstrap';
+import { Container, Tabs, Tab } from 'react-bootstrap';
+import Meteo from '../components/Meteo';
 
 
 
 const News = () => {
     return (
         <Container>
+        
+        <Meteo/>
         <div>
            
             <h1>Les news du jour !</h1>
