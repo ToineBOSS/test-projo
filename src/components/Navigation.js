@@ -5,7 +5,7 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import Accueil from '../pages/Accueil';
 import News from '../pages/News';
 import Erreur from '../pages/Erreur';
-import Spots from '../pages/Spots';
+import Compagnies from '../pages/Compagnies';
 import Classements from '../pages/Classements';
 import '../pages/Accueil.css';
 import Filmz from '../pages/Filmz';
@@ -30,7 +30,7 @@ const Navigation = () => {
         <Nav.Link as={Link} to={"/"} >Accueil</Nav.Link>
         <Nav.Link as={Link} to={"/actus"}>Actus</Nav.Link>
         <Nav.Link as={Link} to={"/films"}>Films</Nav.Link>
-        <Nav.Link as={Link} to={"/acteurs"}>Acteurs</Nav.Link>
+        <Nav.Link as={Link} to={"/compagnies"}>Compagnies</Nav.Link>
         <NavDropdown title="Classements" id="basic-nav-dropdown">
           <NavDropdown.Item as={Link} to={"/classements"}>Monde</NavDropdown.Item>
           <NavDropdown.Item as={Link} to={"/classements"}>France</NavDropdown.Item>
@@ -47,7 +47,7 @@ const Navigation = () => {
             <Route path = "/" exact element ={<Accueil/>}></Route>
           <Route path = "/actus" exact element= {<News/>}> </Route>
           <Route path = "/films" exact element= {<Filmz/>}> </Route>
-          <Route path = "/acteurs" exact element= {<Spots/>}> </Route>
+          <Route path = "/compagnies" exact element= {<Compagnies/>}> </Route>
           <Route path = "/classements" exact element= {<Classements/>}> </Route>
           <Route element = {<Erreur/>}/>
             </Routes>

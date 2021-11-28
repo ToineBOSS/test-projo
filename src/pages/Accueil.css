@@ -8,7 +8,14 @@
         background-size: 100%;
         background-repeat: no-repeat;
 }
-/*//////////////////////////////////////////*/
+/*//////////////// /* {props.movies.map((compagnie, index) => (<div className=" col-sm-4 container-fluid">
+                <img src = {compagnie.logo_path} alt='movie'></img>
+                </div>))} */
+
+.ChuckN{
+    width: auto;
+    height: auto;
+}
 
 
 img{

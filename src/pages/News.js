@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Tabs, Tab } from 'react-bootstrap';
+import Chuck from '../components/Chuck';
 import Meteo from '../components/Meteo';
 
 
@@ -9,6 +10,8 @@ const News = () => {
         <Container>
         
         <Meteo/>
+
+        <Chuck/>
         <div>
            
             <h1>Les news du jour !</h1>
