@@ -1,6 +1,6 @@
 import React , {useState}from 'react';
 import axios from 'axios';
-import "../pages/Accueil.css"
+import "../pages/Accueil.css";
 
 const Chuck = () => {
     const [info, setInfo] = useState("");
