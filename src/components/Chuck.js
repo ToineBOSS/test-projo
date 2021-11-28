@@ -19,11 +19,12 @@ const Chuck = () => {
             <img className="ChuckN" src="./img/Chuck.gif" alt ="chuck"></img>
             <h2>{info}</h2>
             <button 
+            className="ChuckBTN"
             type="button"
             onClick={() => {
                 getInfo();
             }}
-            ></button>
+            > CHUCK !</button>
         </div>
     );
 };

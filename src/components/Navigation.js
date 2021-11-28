@@ -23,11 +23,10 @@ const Navigation = () => {
     
     <Navbar.Brand as={Link} to={"/"} >
        
-        MOVIES</Navbar.Brand>
+         TT MOVIES</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link as={Link} to={"/"} >Accueil</Nav.Link>
         <Nav.Link as={Link} to={"/actus"}>Actus</Nav.Link>
         <Nav.Link as={Link} to={"/films"}>Films</Nav.Link>
         <Nav.Link as={Link} to={"/compagnies"}>Compagnies</Nav.Link>

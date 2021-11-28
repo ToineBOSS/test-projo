@@ -27,9 +27,9 @@ const Filmz = () => {
 
 
     return (
-        
+        <Container  >
 
-        <div className='container-fluid maxitest'>
+        <div className='container-fluid maxitest '>
             <div className="row">
                 <ChercheF chercheVal={chercheVal} setchercheVal={setchercheVal}/>
             </div>
@@ -39,7 +39,7 @@ const Filmz = () => {
            
         </div>
         
-        
+        </Container>
     );
 };
 
