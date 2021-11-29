@@ -3,11 +3,12 @@ import { Container, Row } from 'react-bootstrap';
 import ChercheF from '../components/ChercheF';
 import Films from '../components/Films';
 import './Accueil.css';
-
+import PlustardF from '../components/PlustardF';
 
 const Filmz = () => {
 
     const [movies, setMovies] = useState([]);
+    const [pref, setPref] = useState([]);
     const [chercheVal,setchercheVal] = useState('');
 
     const getMovieReq = async () => {
@@ -25,19 +26,31 @@ const Filmz = () => {
         getMovieReq();
     }, [chercheVal] );
 
+    const addFilmPref = (movie) =>{
+        const newPrefList = [...pref, movie];
+        setPref(newPrefList);
+    }
 
     return (
-        <Container  >
+        <Container fluid >
 
-        <div className='container-fluid maxitest '>
+        
             <div className="row">
                 <ChercheF chercheVal={chercheVal} setchercheVal={setchercheVal}/>
             </div>
+
             <div className="row">
-        <Films movies={movies} />
+        <Films movies={movies} 
+               handlePrefclick={addFilmPref}
+               aregPlustard={PlustardF} />
             </div>
            
-        </div>
+            <div className="row">
+        <Films movies={pref} 
+               handlePrefclick={addFilmPref}
+               aregPlustard={PlustardF} />
+            </div>
+        
         
         </Container>
     );

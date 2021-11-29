@@ -1,23 +1,30 @@
-import React, {useState, useEffect
-} from 'react';
+import React from 'react';
+import { Col, Image } from 'react-bootstrap';
 import '../pages/Accueil.css'
+import PlustardF from './PlustardF';
+
 
 const Films = ( props) => {
     
+const PlustardF = props.aregPlustard;
 
 
     return (
-        <>
-            {props.movies.map((movie, index) => (<div className=" col-sm-4 container-fluid">
-                <img src = {movie.Poster} alt='movie'></img>
-               
-                <ul className="filmInfo">
-                    <li className="InfoM">Titre : {movie.Title}</li>
-                    <li className="InfoM">Date de sortie :{movie.Year}</li>
-                </ul>
+        <div>
+            <ul>
+            {props.movies.map((movie, index) => (<Col className=" CarteF d-flex justify-content-start m-3">
+                <img className= "imgF" src = {movie.Poster} alt='movie'></img>
+
+                <Col className="filmInfo">
+                    <h3 className="InfoM">Titre : {movie.Title}</h3>
+                    <h4 className="InfoM">Date de sortie : {movie.Year}</h4>
+                    <div onClick={() => props.handlePrefclick()}>
+                    <PlustardF/>
+                    </div>
+                </Col>
                 
-                </div>))}
-        </>
+                </Col>))}</ul>
+        </div>
         
     );
 };

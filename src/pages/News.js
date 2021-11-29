@@ -1,9 +1,9 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import Chuck from '../components/Chuck';
 import Meteo from '../components/Meteo';
 import "./Accueil.css";
-
+import Horloge from '../components/Horloge';
 
 
 const News = () => {
@@ -11,9 +11,13 @@ const News = () => {
         <Container fluid >
         
         <Row>
-        <div className="col-md-6 blockMETEO"><Meteo/></div>
-        <div className="col-md-6 blockCHUCK"><Chuck/></div>
+        <div className="col-sm-offset-1 col-sm-4 blockMETEO"><Meteo/></div>
+        <div className="col-sm-4 blockCHUCK"><Chuck/></div>
         </Row>
+
+        <Col>
+        <Horloge/>
+        </Col>
 
         </Container>
     );

@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { Container } from 'react-bootstrap';
 import CompagniesFilms from '../components/CompagniesFilms';
 
+
 const Compagnies = () => {
     const [compagnie, setCompagnie] = useState([]);
 
@@ -38,6 +39,8 @@ const Compagnies = () => {
             
         </div>
         
+        
+
         </Container>
     
     );
