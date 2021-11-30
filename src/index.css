@@ -30,8 +30,6 @@ header{
   background-color: black;
   position:relative;
   overflow: hidden;
-  
-  
 }
 
 main{
@@ -39,6 +37,7 @@ main{
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .movie img{
   width:100%;
 }

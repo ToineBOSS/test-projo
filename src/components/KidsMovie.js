@@ -14,6 +14,7 @@ class KidsMovie extends React.Component{
 
     render() {
         return(
+            < main id="main">
             <div className="movie">
                 <img src= {this.props.afficheUrl} alt={this.props.title}>
                 </img>
@@ -27,6 +28,7 @@ class KidsMovie extends React.Component{
                      {this.props.overview}
                 </div>
             </div>
+            </main>
         )
     }
     

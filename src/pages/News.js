@@ -8,11 +8,14 @@ import Horloge from '../components/Horloge';
 
 const News = () => {
     return (
+        
         <Container fluid >
         
         <Row>
+        < main id="main"> 
         <div className="col-sm-offset-1 col-sm-4 blockMETEO"><Meteo/></div>
         <div className="col-sm-4 blockCHUCK"><Chuck/></div>
+        </main>
         </Row>
 
         <Col>

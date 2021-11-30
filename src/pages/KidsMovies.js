@@ -41,6 +41,7 @@ const KidsMovies = () => {
         <div className='container-fluid maxitest '>
             
             <div className="row">
+                <main id="main"> 
             {movies.map((movie, index) => (
             
             <><KidsMovie
@@ -50,6 +51,7 @@ const KidsMovies = () => {
                     overview={movie.overview} />
             </> 
                 ))}
+                </main>
              </div>       
         </div>
         

@@ -1,6 +1,6 @@
 
 body{
-    background: rgb(51, 47, 47);
+    background: rgb(85, 5, 5);
 }
 
 /*////////ACCUEIL //////// */
@@ -56,6 +56,10 @@ body{
     transition: ease-out 0.3s;
     font-size: 1rem;
     outline: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
 }
 
 .ChuckBTN:hover{
