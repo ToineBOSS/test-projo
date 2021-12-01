@@ -4,6 +4,7 @@ import Chuck from '../components/Chuck';
 import Meteo from '../components/Meteo';
 import "./Accueil.css";
 import Horloge from '../components/Horloge';
+import Graphe from '../components/Graphe';
 
 
 const News = () => {
@@ -18,6 +19,8 @@ const News = () => {
         <Col>
         <Horloge/>
         </Col>
+
+        <Graphe/>
 
         </Container>
     );

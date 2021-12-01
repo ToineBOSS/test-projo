@@ -9,12 +9,12 @@ const Compagnies = () => {
     const getCompagnie = async () => {
         const url = `https://api.themoviedb.org/3/person/popular?api_key=b2f3ce518b17b18ef7fafe3dc842865d&language=en-US&page=1`
         
-        const response = await fetch(url);
-        const responseJson = await response.json();
+       // const response = await fetch(url);
+        //const responseJson = await response.json();
 
-        if(responseJson.Search){
+        //if(responseJson.Search){
         //console.log(responseJson);
-        setCompagnie(responseJson.Search);}
+        //setCompagnie(responseJson.Search);}
         
         //useEffect(() => {
           //getCompagnie();
