@@ -9,6 +9,7 @@ import Compagnies from '../pages/Compagnies';
 import Classements from '../pages/Classements';
 import '../pages/Accueil.css';
 import Filmz from '../pages/Filmz';
+import KidsMovies from '../pages/KidsMovies';
 
 
 const Navigation = () => {
@@ -28,6 +29,7 @@ const Navigation = () => {
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link as={Link} to={"/actus"}>Actus</Nav.Link>
+        <Nav.Link as={Link} to={"/kids"}>Kids</Nav.Link>
         <Nav.Link as={Link} to={"/films"}>Films</Nav.Link>
         <Nav.Link as={Link} to={"/compagnies"}>Compagnies</Nav.Link>
         <NavDropdown title="Classements" id="basic-nav-dropdown">
@@ -45,6 +47,7 @@ const Navigation = () => {
             <Routes>
             <Route path = "/" exact element ={<Accueil/>}></Route>
           <Route path = "/actus" exact element= {<News/>}> </Route>
+          <Route path = "/kids" exact element= {<KidsMovies/>}> </Route>
           <Route path = "/films" exact element= {<Filmz/>}> </Route>
           <Route path = "/compagnies" exact element= {<Compagnies/>}> </Route>
           <Route path = "/classements" exact element= {<Classements/>}> </Route>
