@@ -14,21 +14,21 @@ class KidsMovie extends React.Component{
 
     render() {
         return(
-            < main id="main">
-            <div className="movie">
-                <img src= {this.props.afficheUrl} alt={this.props.title}>
-                </img>
+            
+                <div className="movie">
+                    <img src= {this.props.afficheUrl} alt={this.props.title}>
+                    </img>
 
-                <div className="movie-info">
-                    <h3>{this.props.name} </h3>
-                    <span class={this.getColor(this.props.vote_average)}>{this.props.vote_average} </span>
-                </div>
+                    <div className="movie-info">
+                        <h3>{this.props.name} </h3>
+                        <span class={this.getColor(this.props.vote_average)}>{this.props.vote_average} </span>
+                    </div>
 
-                <div className="overview">
-                     {this.props.overview}
+                    <div className="overview">
+                        {this.props.overview}
+                    </div>
                 </div>
-            </div>
-            </main>
+            
         )
     }
     

@@ -56,10 +56,6 @@ body{
     transition: ease-out 0.3s;
     font-size: 1rem;
     outline: none;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   
 }
 
 .ChuckBTN:hover{
