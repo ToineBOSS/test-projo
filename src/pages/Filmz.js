@@ -4,6 +4,7 @@ import ChercheF from '../components/ChercheF';
 import Films from '../components/Films';
 import './Accueil.css';
 import PlustardF from '../components/PlustardF';
+import Prefs from '../components/Prefs';
 
 const Filmz = () => {
 
@@ -39,17 +40,13 @@ const Filmz = () => {
                 <ChercheF chercheVal={chercheVal} setchercheVal={setchercheVal}/>
             </div>
 
+            <Prefs prefs={pref} /> 
             <div className="row">
         <Films movies={movies} 
                handlePrefclick={addFilmPref}
                aregPlustard={PlustardF} />
             </div>
            
-            <div className="row">
-        <Films movies={pref} 
-               handlePrefclick={addFilmPref}
-               aregPlustard={PlustardF} />
-            </div>
         
         
         </Container>

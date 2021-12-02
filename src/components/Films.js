@@ -12,18 +12,21 @@ const PlustardF = props.aregPlustard;
     return (
         <div>
             <ul>
-            {props.movies.map((movie, index) => (<Col className=" CarteF d-flex justify-content-start m-3">
+                <li>
+            {props.movies.map((movie, index,key ="id") => (<Col className=" CarteF d-flex justify-content-start m-3">
                 <img className= "imgF" src = {movie.Poster} alt='movie'></img>
 
                 <Col className="filmInfo">
                     <h3 className="InfoM">Titre : {movie.Title}</h3>
                     <h4 className="InfoM">Date de sortie : {movie.Year}</h4>
-                    <div onClick={() => props.handlePrefclick()}>
+                    <div onClick={() => props.handlePrefclick(movie)}>
                     <PlustardF/>
                     </div>
                 </Col>
                 
-                </Col>))}</ul>
+                </Col>))}
+                </li>
+                </ul>
         </div>
         
     );

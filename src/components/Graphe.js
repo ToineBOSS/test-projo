@@ -46,7 +46,7 @@ const data = [
     },
   ];
   
-  export default class Example extends PureComponent {
+class Graphe extends PureComponent {
     static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
   
 
@@ -76,3 +76,5 @@ const data = [
         );
       }
     }
+
+    export default  Graphe;

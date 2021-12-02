@@ -1,6 +1,6 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../index.css';
-import { Navbar, Nav, NavDropdown, Container, Image,Col} from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import Accueil from '../pages/Accueil';
 import News from '../pages/News';
