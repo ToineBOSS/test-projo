@@ -5,6 +5,7 @@ import Meteo from '../components/Meteo';
 import "./Accueil.css";
 import Horloge from '../components/Horloge';
 import Graphe from '../components/Graphe';
+import Carou from '../components/Carou';
 
 
 const News = () => {
@@ -23,6 +24,7 @@ const News = () => {
         <Horloge/>
         </Col>
 
+        <Carou/>
         <Graphe/>
 
         </Container>
