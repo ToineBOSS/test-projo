@@ -16,16 +16,23 @@ const Chuck = () => {
 
     return (
         <div>
-            <img className="ChuckN" src="./img/Chuck.gif" alt ="chuck"></img>
+        
+        <div className="ChuckN" >
+            <h2> The Chuck BOX ! </h2>
+            <img  src="./img/Chuck.gif" alt ="chuck"></img>
             <h2>{info}</h2>
+            <div className="infoChuck">
             <button 
             className="ChuckBTN"
             type="button"
             onClick={() => {
                 getInfo();
             }}
-            > CHUCK !</button>
+            > CLICK HERE TO CHUCK !</button>
+            </div>
         </div>
+        </div>
+        
     );
 };
 

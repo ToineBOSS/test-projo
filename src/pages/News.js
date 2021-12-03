@@ -12,12 +12,17 @@ const News = () => {
     return (
         
         <Container fluid >
-        
         <Row>
-        < main id="main"> 
-        <div className="col-sm-offset-1 col-sm-4 blockMETEO"><Meteo/></div>
-        <div className="col-sm-4 blockCHUCK"><Chuck/></div>
-        </main>
+        
+            <Col>
+                
+                <Chuck />
+            </Col>
+            <Col>
+                
+                 <Meteo/>
+                <Horloge/>
+            </Col>
         </Row>
 
         <Col>
