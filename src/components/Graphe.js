@@ -1,58 +1,83 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
+    
+
+  {
+    name: '2007',
+    Entrées : 178,
+    
+  },{
+    name: '2008',
+    Entrées : 190,
+  
+  },
+  {
+    name: '2009',
+    Entrées : 201,
+    
+  },{
+    name: '2010',
+    Entrées : 207,
+   
+  },{
+    name: '2011',
+    Entrées : 217,
+   
+  },{
+    name: '2012',
+    Entrées : 203,
+    
+  },{
+    name: '2013',
+    Entrées : 193,
+    
+  },{
+    name: '2014',
+    Entrées : 209,
+    
+  },
     {
-      name: 'Page A',
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+      name: '2015',
+      Entrées : 205,
+    
     },
     {
-      name: 'Page B',
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+      name: '2016',
+      Entrées : 213,
+      
     },
     {
-      name: 'Page C',
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
+      name: '2017',
+      Entrées : 209,
+      
     },
     {
-      name: 'Page D',
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+      name: '2018',
+      Entrées : 201,
+      
     },
     {
-      name: 'Page E',
-      uv: 1890,
-      pv: 4800,
-      amt: 2181,
+      name: '2019',
+      Entrées : 213,
     },
     {
-      name: 'Page F',
-      uv: 2390,
-      pv: 3800,
-      amt: 2500,
-    },
-    {
-      name: 'Page G',
-      uv: 3490,
-      pv: 4300,
-      amt: 2100,
+      name: '2020',
+      Entrées : 65,
     },
   ];
   
-class Graphe extends PureComponent {
-    static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
+export default function Graphe() {
   
 
-    render () {
+    
         return (
-          <ResponsiveContainer width="100%" height="100%">
+          <div>
+            <p className="titreG">Nombres d'entrées au Cinéma en France depuis 2007 (en millions)</p>
+          
+          <ResponsiveContainer width="100%" aspect={2}>
+            
             <LineChart
               width={500}
               height={300}
@@ -69,12 +94,10 @@ class Graphe extends PureComponent {
               <YAxis />
               <Tooltip />
               <Legend />
-              <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+              <Line type="monotone" dataKey="Entrées" stroke="#8884d8" activeDot={{ r: 8 }} />
             </LineChart>
           </ResponsiveContainer>
+          </div>
         );
       }
-    }
-
-    export default  Graphe;
+    

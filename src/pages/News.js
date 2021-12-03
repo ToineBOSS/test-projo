@@ -24,9 +24,16 @@ const News = () => {
         <Horloge/>
         </Col>
 
-        <Carou/>
-        <Graphe/>
+        <Row>
+            <Col>
+                <Carou/>
+            </Col>
 
+            <Col>
+                <Graphe/>
+            </Col>
+        </Row>
+        
         </Container>
     );
 };
