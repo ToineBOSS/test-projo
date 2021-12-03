@@ -99,7 +99,7 @@ h2{
 
 
 
-img{
+.imgF{
     width: 240px;
     height: 356px;
     display: block;
@@ -205,3 +205,11 @@ img{
 }
 
 
+.carouS{
+    width: 75vh;
+    
+}
+
+.imgC{
+    border-radius: 10px;
+}
