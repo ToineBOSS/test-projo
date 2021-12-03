@@ -12,11 +12,19 @@ const Horloge = () => {
     return (
         <div>
 
-            <h1>{heure.toLocaleTimeString()}</h1>
-            
+            <h3>{heure.toLocaleTimeString()}</h3>
+            <h3>{Hourforcine(heure) }</h3>
 
         </div>
     );
 };
 
+function Hourforcine(heurez)
+{
+    if(7<=heurez.getHours() & heurez.getHours()<=20){
+        return (<p>Time to go to the cinema ! </p>)
+    } else {
+        return (<p>Time to sleep !</p>)
+    }
+}
 export default Horloge;
