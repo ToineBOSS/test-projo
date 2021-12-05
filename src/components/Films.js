@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Image } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import '../pages/Accueil.css'
 import PlustardF from './PlustardF';
 
@@ -13,7 +13,7 @@ const PlustardF = props.aregPlustard;
         <div>
             <ul>
                 <li>
-            {props.movies.map((movie, index,key ="id") => (<Col className=" CarteF d-flex justify-content-start m-3">
+            {props.movies.map((movie, index) => (<Col className=" CarteF d-flex justify-content-start m-3">
                 <img className= "imgF" src = {movie.Poster} alt='movie'></img>
 
                 <Col className="filmInfo">

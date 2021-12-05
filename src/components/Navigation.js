@@ -5,7 +5,7 @@ import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import Accueil from '../pages/Accueil';
 import News from '../pages/News';
 import Erreur from '../pages/Erreur';
-import Compagnies from '../pages/Compagnies';
+import StarWarZ from '../pages/StarWarZ';
 import Classements from '../pages/Classements';
 import '../pages/Accueil.css';
 import Filmz from '../pages/Filmz';
@@ -31,7 +31,7 @@ const Navigation = () => {
         <Nav.Link as={Link} to={"/actus"}>Actus</Nav.Link>
         <Nav.Link as={Link} to={"/kids"}>Kids</Nav.Link>
         <Nav.Link as={Link} to={"/films"}>Films</Nav.Link>
-        <Nav.Link as={Link} to={"/compagnies"}>Compagnies</Nav.Link>
+        <Nav.Link as={Link} to={"/starwars"}>Star Wars</Nav.Link>
         <NavDropdown title="Classements" id="basic-nav-dropdown">
           <NavDropdown.Item as={Link} to={"/classements"}>Monde</NavDropdown.Item>
           <NavDropdown.Item as={Link} to={"/classements"}>France</NavDropdown.Item>
@@ -49,7 +49,7 @@ const Navigation = () => {
           <Route path = "/actus" exact element= {<News/>}> </Route>
           <Route path = "/kids" exact element= {<KidsMovies/>}> </Route>
           <Route path = "/films" exact element= {<Filmz/>}> </Route>
-          <Route path = "/compagnies" exact element= {<Compagnies/>}> </Route>
+          <Route path = "/starwars" exact element= {<StarWarZ/>}> </Route>
           <Route path = "/classements" exact element= {<Classements/>}> </Route>
           <Route element = {<Erreur/>}/>
             </Routes>

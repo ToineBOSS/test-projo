@@ -21,14 +21,10 @@ const News = () => {
             <Col>
                 
                  <Meteo/>
-                <Horloge/>
+                <Horloge />
             </Col>
         </Row>
-
-        <Col>
-        <Horloge/>
-        </Col>
-
+        
         <Row>
             <Col>
                 <Carou/>
@@ -38,7 +34,7 @@ const News = () => {
                 <Graphe/>
             </Col>
         </Row>
-        
+
         </Container>
     );
 };
