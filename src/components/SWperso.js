@@ -1,13 +1,14 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
 
 const SWperso = (props) => {
     return (
         <div>
             <ul>
-            {props.people.map((people) => (
+            {props.perso.map((perso) => (
                 <Col>
                     <h3>
-                        {poeple.name}
+                        {perso.name}
                     </h3>
                 </Col>
             ))}
