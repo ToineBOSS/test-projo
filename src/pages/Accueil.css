@@ -218,3 +218,27 @@ h2{
     margin-left: 100px;
     color: white;
 }
+
+/*//////////////////////FOOTER////////////////////////////////////*/
+
+
+
+
+.deroulantSW{
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    color: #9c8758; 
+    
+}
+
+.fondStar{
+    background-image : url("../styles/fondSW.jpg");
+    background-size: cover;
+    height: 100vh ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: flex;
+}

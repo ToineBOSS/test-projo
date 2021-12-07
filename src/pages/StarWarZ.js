@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import { Container,Accordion } from 'react-bootstrap';
+import { Container,Accordion, Row } from 'react-bootstrap';
 import SWplanets from "../components/SWplanet";
 import SWfilms from '../components/SWfilms';
 import SWperso from '../components/SWperso';
-
+import "./Accueil.css";
 
 
 
@@ -12,7 +12,7 @@ const Compagnies = () => {
     const [films  , setFilms] = useState([]);
     const [planets,setPlanets] = useState([]);
     const [perso,setPerso] = useState([]);
-    const [sps,setSps] = useState([]);
+    
 
     const getFilms = async () => {
         const url = "https://swapi.dev/api/films"
@@ -54,9 +54,10 @@ const getPerso = async () => {
     }, [] );
 
     return (
-        <Container>
-            <Accordion defaultActiveKey="0" fluid>
-  <Accordion.Item eventKey="0">
+        <Container fluid className="fondStar">
+          <Row>
+            <Accordion defaultActiveKey="0" className="deroulantSW" >
+  <Accordion.Item eventKey="0" flush fluid>
     <Accordion.Header>Films</Accordion.Header>
     <Accordion.Body>
 
@@ -64,7 +65,7 @@ const getPerso = async () => {
 
     </Accordion.Body>
   </Accordion.Item>
-  <Accordion.Item eventKey="1">
+  <Accordion.Item eventKey="1" flush>
     <Accordion.Header>Planetes</Accordion.Header>
     <Accordion.Body>
       
@@ -73,7 +74,7 @@ const getPerso = async () => {
     </Accordion.Body>
   </Accordion.Item>
   
-  <Accordion.Item eventKey="3">
+  <Accordion.Item eventKey="3" flush>
     <Accordion.Header>Personnages</Accordion.Header>
     <Accordion.Body>
       
@@ -85,7 +86,7 @@ const getPerso = async () => {
 
 </Accordion>
             
-        
+</Row>
         </Container>
     
     );
