@@ -1,18 +1,15 @@
 import React ,{useEffect, useState} from 'react';
-import { Container, Row } from 'react-bootstrap';
-import ChercheF from '../components/ChercheF';
+import { Container} from 'react-bootstrap';
 import './Accueil.css';
 import KidsMovie from '../components/KidsMovie';
 
 const KidsMovies = () => {
 
     const [movies, listMovies] = useState([]);
-    const [chercheVal,setchercheVal] = useState('');
     //TMDB
 
     const API_KEY = 'b5fc234ba91bf755e7cfdda81e0d2a0c' ;
     const BASE_URL = 'https://api.themoviedb.org/3';
-    const API_URL_ALLMOVIES = BASE_URL + '/discover/movie?sort_by=popularity.desc&api_key='+API_KEY;
     const API_URL_KIDSMOVIES = BASE_URL + '/discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key='+API_KEY;
     const IMG_URL = 'https://image.tmdb.org/t/p/w500/';
 
@@ -32,7 +29,7 @@ const KidsMovies = () => {
 
     useEffect(() => {
         getKidsMovieReq();
-    }, [chercheVal] );
+    }, [] );
 
 
     return (

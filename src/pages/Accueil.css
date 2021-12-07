@@ -242,3 +242,22 @@ h2{
     color: white;
     display: flex;
 }
+
+.Meteobox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+  margin: 1rem;
+  border-radius: 6px;
+  box-shadow: 0.2px 4px 5px rgba(0.0.0.1);
+  background-color: rgb(224, 219, 219);
+  position:relative;
+  overflow: hidden;
+    
+}
+
+.h{
+    color: black;
+}
