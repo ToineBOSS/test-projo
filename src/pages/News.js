@@ -33,7 +33,7 @@ const News = () => {
 
         
 
-        <Carou/>
+        
         <Graphe/>
         </Row>
         </Container>
