@@ -10,7 +10,7 @@ render () {
 
 <div style={{backgroundColor: 'white'}}>
 
-    Préférences : 
+    Films à regarder plus tard : 
 
         <ul>    
     {this.props.prefs.map((movie, index) => (

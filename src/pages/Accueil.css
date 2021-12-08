@@ -224,3 +224,58 @@ input .btn_crud {
     font-size: 20px;
     margin: 5px;
 }
+.titreG{
+    margin-left: 100px;
+    color: white;
+}
+
+/*//////////////////////FOOTER////////////////////////////////////*/
+
+
+
+
+.deroulantSW{
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    color: #9c8758; 
+    
+}
+
+.fondStar{
+    background-image : url("../styles/fondSW.jpg");
+    background-size: cover;
+    height: 100vh ;
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    display: flex;
+}
+
+.Meteobox{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+  margin: 1rem;
+  border-radius: 6px;
+  box-shadow: 0.2px 4px 5px rgba(0.0.0.1);
+  background-color: rgb(224, 219, 219);
+  position:relative;
+  overflow: hidden;
+    
+}
+
+.h{
+    color: black;
+}
+
+.carouS{
+    width: 75vh;
+}
+
+.imgC{
+        border-radius: 10px;
+}

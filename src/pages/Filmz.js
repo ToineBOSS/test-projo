@@ -1,5 +1,5 @@
 import React ,{useEffect, useState} from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import ChercheF from '../components/ChercheF';
 import Films from '../components/Films';
 import './Accueil.css';

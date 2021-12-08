@@ -4,6 +4,7 @@ import { Container, Row } from 'react-bootstrap';
 import './Accueil.css';
 
 
+
 const Accueil = () => {
     return (
         <Container fluid className="fondE1">
@@ -19,6 +20,7 @@ const Accueil = () => {
 
         
              </Row>
+             
         </Container>
     );
 };

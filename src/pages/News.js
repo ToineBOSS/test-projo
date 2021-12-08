@@ -11,7 +11,7 @@ import Carou from '../components/Carou';
 const News = () => {
     return (
         
-        <Container fluid >
+        <Container  >
         <Row>
         
             <Col>
@@ -21,15 +21,21 @@ const News = () => {
             <Col>
                 
                  <Meteo/>
+
                 <Horloge/>
             </Col>
         </Row>
+        
+        <Row>
+            <Col>
+                <Carou/>
+            </Col>
 
         
 
         <Carou/>
         <Graphe/>
-
+        </Row>
         </Container>
     );
 };
