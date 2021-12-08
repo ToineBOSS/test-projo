@@ -5,22 +5,15 @@ import EntreeCineW from '../components/EntreeCinewid';
 import Graphe from '../components/Graphe';
 
 
-/*const [Année,setAnnée]=useState("");
-const[nombreEntree,setNbEntree]=useState(0);
-const addToList = () =>{Axios.post("http://localhost:3001/insert",{
-    Année:Année,
-    nombreEntree:nombreEntree
-    });
- };*/
 
-const Classements = () => {
+const NAPI = () => {
    return( 
     <Container fluid >
         <Row>
         
             <Col>
                 
-                <EntreeCineW/>
+            <EntreeCineW/>
             </Col>
             
         <Graphe/>
@@ -34,4 +27,4 @@ const Classements = () => {
    
 
 
-export default Classements;
+export default NAPI;

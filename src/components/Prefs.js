@@ -8,7 +8,7 @@ render () {
 
     return (
 
-<div style={{backgroundColor: 'white'}}>
+<div style={{backgroundColor: '#F6F6F6'}}>
 
     Films à regarder plus tard : 
 

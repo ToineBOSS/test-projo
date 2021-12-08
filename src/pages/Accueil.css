@@ -160,7 +160,7 @@ img{
   margin: 1rem;
   border-radius: 6px;
   box-shadow: 0.2px 4px 5px rgba(0.0.0.1);
-  background-color: rgb(224, 219, 219);
+  background-color: #F6F6F6;
   position:relative;
   overflow: hidden;
 
@@ -205,6 +205,11 @@ img{
     box-shadow: inset 100px 0 0 0 #aaa568;
 }
 
+.Prefs{
+    margin: 50px;
+    width: 100px;
+
+}
 
 /*//////////////////////////////////////////////////////////////////////*/
 /*//////////////////////CRUD////////////////////////////////////*/
@@ -218,17 +223,47 @@ img{
     justify-content:center ;
     align-items: center;
 }
-input .btn_crud {
-    width: 200px;
-    height: 30px;
+.btn_crud {
+    width: 300px;
+    height: 40px;
     font-size: 20px;
-    margin: 5px;
-}
-.titreG{
-    margin-left: 100px;
-    color: white;
+    margin: 50px;
+    box-shadow: 0.2px 3px 4px rgba(0.0.0.1);
+    color: #000000;
+    border-radius: 3px;
 }
 
+
+
+.titreG{
+    margin-left: 100px;
+    color: #F6F6F6;
+}
+
+.CRUDTITLE{
+    border :none;
+    color: #9C8758;
+    border-radius: 10px;
+    font-size: 4rem;
+    outline: none;
+    
+    
+}
+
+label {
+    border :none;
+    color: #9C8758;
+    border-radius: 10px;
+    font-size: 2rem;
+    outline: none;
+}
+
+input {
+    color: #F6F6F6;
+    box-shadow: 0.2px 3px 4px rgba(0.0.0.1);
+    border-radius: 3px;
+
+}
 /*//////////////////////FOOTER////////////////////////////////////*/
 
 
@@ -262,7 +297,7 @@ input .btn_crud {
   margin: 1rem;
   border-radius: 6px;
   box-shadow: 0.2px 4px 5px rgba(0.0.0.1);
-  background-color: rgb(224, 219, 219);
+  background-color: #F6F6F6;
   position:relative;
   overflow: hidden;
     
@@ -279,3 +314,4 @@ input .btn_crud {
 .imgC{
         border-radius: 10px;
 }
+

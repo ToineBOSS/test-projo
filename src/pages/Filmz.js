@@ -35,12 +35,13 @@ const Filmz = () => {
     return (
         <Container fluid >
 
-        
+            <Container>
             <div className="row">
                 <ChercheF chercheVal={chercheVal} setchercheVal={setchercheVal}/>
             </div>
-
+            
             <Prefs prefs={pref} /> 
+            </Container>
             <div className="row">
         <Films movies={movies} 
                handlePrefclick={addFilmPref}

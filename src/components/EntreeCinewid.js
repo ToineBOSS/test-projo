@@ -18,7 +18,7 @@ const[NbTotEntrees, setNbTotEntrees] = useState(0);
 return (
     
     <div className="Crud">
-                <h1>CRUD</h1>
+                <div className="CRUDTITLE">ADMIN MODE</div>
                 <label>Année:</label>
                 <input type="text" onChange={(event) => {setNbAnnee(event.target.value);}}
                     />

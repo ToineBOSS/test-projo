@@ -7,7 +7,7 @@ const Meteo = () => {
     const [meteoData, setmeteoDatas] = useState([])
     const [ville,setVille] =useState("")
     const getMeteo = (event) => {
-        if(event.key === "Enter") {
+        if(event.key == "Enter") {
             fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ville}&units=imperial&APPID=${cleApi}`)
             //https://api.openweathermap.org/data/2.5/weather?units=imperial&APPID=1f0e1e6fc642de9c2a57b66875e7e085
             .then(response => response.json())
@@ -37,7 +37,7 @@ const Meteo = () => {
     ): (
                 <div>
                     <p className="p2"> {meteoData.name}</p>
-                    <p className="p3"> {Math.round(((meteoData.main.temp-32)/1.8))} °C </p>
+                    <p className="p3"> {Math(((meteoData.main.temp-32)/1.8))} °C </p>
                     <p className="p3">{meteoData.weather[0].main}</p>
                     <p>{ShouldIGo(meteoData.weather[0].main)}</p>
                 </div>
@@ -52,12 +52,12 @@ const Meteo = () => {
 
 function ShouldIGo(weatherz)
 {
-    if(weatherz==='Thunderstorm'){
+    if(weatherz=='Thunderstorm'){
         return (
             <p>You should stay home</p>)
         }
 
-    if(weatherz==='Clear'){
+    if(weatherz=='Clear'){
         return (<p>You should go outside !</p>)
     }
     

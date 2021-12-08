@@ -6,10 +6,11 @@ import Accueil from '../pages/Accueil';
 import News from '../pages/News';
 import Erreur from '../pages/Erreur';
 import StarWarZ from '../pages/StarWarZ';
-import Classements from '../pages/Classements';
+import Classements from '../pages/NAPI';
 import '../pages/Accueil.css';
 import Filmz from '../pages/Filmz';
 import KidsMovies from '../pages/KidsMovies';
+import NAPI from '../pages/NAPI';
 
 
 const Navigation = () => {
@@ -32,11 +33,10 @@ const Navigation = () => {
         <Nav.Link as={Link} to={"/kids"}>Kids</Nav.Link>
         <Nav.Link as={Link} to={"/films"}>Films</Nav.Link>
         <Nav.Link as={Link} to={"/starwars"}>Star Wars</Nav.Link>
-        <NavDropdown title="Classements" id="basic-nav-dropdown">
-          <NavDropdown.Item as={Link} to={"/classements"}>Monde</NavDropdown.Item>
-          <NavDropdown.Item as={Link} to={"/classements"}>France</NavDropdown.Item>
+        <NavDropdown title="NAPI" id="basic-nav-dropdown">
+          <NavDropdown.Item as={Link} to={"/NAPI"}>Encore NAPI !</NavDropdown.Item>
           <NavDropdown.Divider />
-          <NavDropdown.Item href="https://www.facebook.com/antoine.petit.182/">JSpquoi</NavDropdown.Item>
+          <NavDropdown.Item href="https://www.figma.com/file/lPXxeoPNvxCDBVykoxTxs9/Untitled?node-id=0%3A1">fygma</NavDropdown.Item>
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
@@ -50,7 +50,7 @@ const Navigation = () => {
           <Route path = "/kids" exact element= {<KidsMovies/>}> </Route>
           <Route path = "/films" exact element= {<Filmz/>}> </Route>
           <Route path = "/starwars" exact element= {<StarWarZ/>}> </Route>
-          <Route path = "/classements" exact element= {<Classements/>}> </Route>
+          <Route path = "/NAPI" exact element= {<NAPI/>}> </Route>
           <Route element = {<Erreur/>}/>
             </Routes>
         </div>
