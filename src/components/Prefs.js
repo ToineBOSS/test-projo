@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../pages/Accueil.css";
  
 
 class Prefs extends React.Component {
@@ -8,7 +8,7 @@ render () {
 
     return (
 
-<div style={{backgroundColor: '#F6F6F6'}}>
+<div className="plusTar">
 
     Films à regarder plus tard : 
 
