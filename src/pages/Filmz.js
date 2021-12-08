@@ -1,5 +1,5 @@
 import React ,{useEffect, useState} from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import ChercheF from '../components/ChercheF';
 import Films from '../components/Films';
 import './Accueil.css';
@@ -35,17 +35,20 @@ const Filmz = () => {
     return (
         <Container fluid >
 
-        
-            <div className="row">
-                <ChercheF chercheVal={chercheVal} setchercheVal={setchercheVal}/>
-            </div>
 
+            <Row>
+                <Col>
+                <ChercheF chercheVal={chercheVal} setchercheVal={setchercheVal}/>
+                </Col>
+            <Col></Col>
             <Prefs prefs={pref} /> 
-            <div className="row">
+            
+            </Row>
+            <Row>
         <Films movies={movies} 
                handlePrefclick={addFilmPref}
                aregPlustard={PlustardF} />
-            </div>
+            </Row>
            
         
         
