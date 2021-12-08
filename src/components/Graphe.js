@@ -1,5 +1,6 @@
-import React, { PureComponent } from 'react';
+import React, { PureComponent,useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
 
 const data = [
     {
@@ -45,11 +46,13 @@ const data = [
       amt: 2100,
     },
   ];
+
+    
   
 class Graphe extends PureComponent {
     static demoUrl = 'https://codesandbox.io/s/simple-line-chart-kec3v';
-  
-
+    
+    
     render () {
         return (
           <ResponsiveContainer width="100%" height="100%">

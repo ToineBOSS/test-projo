@@ -25,9 +25,7 @@ const News = () => {
             </Col>
         </Row>
 
-        <Col>
-        <Horloge/>
-        </Col>
+        
 
         <Carou/>
         <Graphe/>
