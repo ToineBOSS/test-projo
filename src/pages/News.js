@@ -1,25 +1,40 @@
 import React from 'react';
-import Navigation from '../components/Navigation';
+import { Container, Row, Col } from 'react-bootstrap';
+import Chuck from '../components/Chuck';
+import Meteo from '../components/Meteo';
+import "./Accueil.css";
+import Horloge from '../components/Horloge';
+import Graphe from '../components/Graphe';
+import Carou from '../components/Carou';
 
 
 const News = () => {
     return (
-        <div>
-            <Navigation/>
-            <h1>Les news du jour !</h1>
-            <br/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae recusandae, quis facere,
-                 magnam consequatur natus, nemo omnis aperiam quidem odit sint accusantium nesciunt adipisci distinctio ipsa 
-                 totam voluptate. Optio nihil ipsum neque, praesentium commodi architecto esse et veritatis facere ullam,
-                 sint totam! Quibusdam harum aut cumque dolor molestiae dolorum? Itaque quidem praesentium nisi minima minus laborum. Quos, sunt quis!
-                 </p>
-            <br/>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae recusandae, quis facere,
-                 magnam consequatur natus, nemo omnis aperiam quidem odit sint accusantium nesciunt adipisci distinctio ipsa 
-                 totam voluptate. Optio nihil ipsum neque, praesentium commodi architecto esse et veritatis facere ullam,
-                 sint totam! Quibusdam harum aut cumque dolor molestiae dolorum? Itaque quidem praesentium nisi minima minus laborum. Quos, sunt quis!
-                 </p>
-        </div>
+        
+        <Container  >
+        <Row>
+        
+            <Col>
+                
+                <Chuck />
+            </Col>
+            <Col>
+                
+                 <Meteo/>
+
+                <Horloge/>
+            </Col>
+        </Row>
+        
+        <Row>
+            <Col>
+                <Carou/>
+            </Col>
+
+        
+        <Graphe/>
+        </Row>
+        </Container>
     );
 };
 
