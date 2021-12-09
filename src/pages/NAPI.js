@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Axios from 'axios'
 import { Container, Row, Col } from 'react-bootstrap';
 import EntreeCineW from '../components/EntreeCinewid';
 import Graphe from '../components/Graphe';
@@ -17,6 +16,7 @@ const NAPI = () => {
             </Col>
             
         <Graphe/>
+        
         </Row>
         </Container>
     )

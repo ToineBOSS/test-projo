@@ -24,7 +24,7 @@ const Meteo = () => {
             <p> Look if you should go to the cinema...</p>
             <input 
             className="chercheT" 
-            placeholder="put your city here..."
+            placeholder="Put your city here..."
             onChange={e => setVille(e.target.value)}
             value={ville}
             onKeyPress={getMeteo}
@@ -37,7 +37,7 @@ const Meteo = () => {
     ): (
                 <div>
                     <p className="p2"> {meteoData.name}</p>
-                    <p className="p3"> {Math(((meteoData.main.temp-32)/1.8))} °C </p>
+                    <p className="p3"> {Math.round(((meteoData.main.temp-32)/1.8))} °C </p>
                     <p className="p3">{meteoData.weather[0].main}</p>
                     <p>{ShouldIGo(meteoData.weather[0].main)}</p>
                 </div>

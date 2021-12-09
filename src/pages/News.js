@@ -32,8 +32,6 @@ const News = () => {
             </Col>
 
         
-
-        
         <Graphe/>
         </Row>
         </Container>

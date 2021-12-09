@@ -15,7 +15,7 @@ const Accueil = () => {
          
             <p>Retrouvez ici la passion pour les films !</p>
         
-            <button className="BtnACC">Go !</button>
+            
         </div>
 
         
